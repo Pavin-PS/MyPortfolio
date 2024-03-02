@@ -13,13 +13,17 @@
             width: 100vh;
             background: linear-gradient(#14141A,#282929);
             height: 100vh;
+            overlay: hidden;
+            background-repeat: no-repeat;
+            background-size: contain cover;
+            
         }
         .card{
 
             width: 90vw;
             display: flex;
             position: absolute;
-            margin-left: 5vw;
+            margin-left: 0.5vw;
             top: 15%;
             justify-content: space-between;
         }
@@ -58,14 +62,20 @@
             object-fit: cover;
             object-position: bottom;
             border-radius: 100%;
-            
+            width: 30vw;
+            height: 30vw;
         }
         .button{
+            width: 16vw;
             color: white;
             background-color: #7843E9;
             border-radius: 5px;
             border: none;
+            margin-left: 5vw;
             padding: 8px;
+        }
+        a{
+            text-decoration: none;
         }
         .media{
             display: flex;
@@ -92,7 +102,7 @@
             </div></a>
         </div>
         <div class="card2">
-            <img src="./assets/images/pavin.jpg" alt="" width="500vw" height="500vw">
+            <img src="./assets/images/pavin.jpg" alt="">
         </div>
     </div>
 </body>

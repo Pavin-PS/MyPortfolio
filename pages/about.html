@@ -13,58 +13,225 @@
         body{
             width: 100vw;
             height: 100vh;
+            overflow-x: hidden;
         }
         .nav-bar{
-            padding: 10px;
-            height: 10vh;
-            display: flex;
-            justify-content: space-between;
+          width: 100vw;
+          height: 50px;
+          padding: 1vw 1vw 4vw 1vw; 
+          display: flex;
+          justify-content: space-between;
         }
-        .nav-bar img{
-            
-            border-radius: 100%;
+        .name{
+          display: flex;
+          width: 20%;
+          justify-content: space-evenly;
+        }
+        .name img{
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+        }
+        .links{
+          width: 40%;
+          display: flex;
+          justify-content: space-evenly;
         }
         .links a{
-            margin:0 5px ;
+          text-decoration: none;
+          color: black;
         }
-        .pic{
-            width: 50vw;
-            display: flex;
-            justify-content: space-evenly;
+        .ab-title{
+          background-image: url("../assets/images/ab-bg.jpg");
+          text-align: center;
+          padding-top: 17.5%;
+          padding-bottom: 17.5%;
+          margin-bottom: 5%;
+          width: 100vw;
         }
-        .pic h4{
-            margin-top: 2.5vh;
-            font-size: 1rem;
+        .sub1{
+          margin-left: 20%;
+          width: 60%;
+          text-align: center;
         }
+        .sub1 h1{
+          font-weight: bold;
+          font-size: 65;
+        }
+        .sub1 h4{
+          font-size: 23;
+        }
+        h1{
+          font-size: 50;
+          font-weight: bold;
+        }
+        .about-title{
+          width: 100%;
+          text-align: center;
+          margin-top: 5%;
+        }
+        hr{
+          width: 2%;
+          height: 5px;
+          border-radius: 2px;
+          margin-left: 49%;
+          background-color: #7843E9;
+          opacity: 100%;
+        }
+        .about{
+
+          width: 90%;
+          display: flex;
+          margin: 5%;
+          justify-content: space-evenly;
+          margin-bottom: 5%;
+        }
+        .me{
+          width: 40%;
+          text-align: center;
+        }
+        .skills{
+          width: 40%;
+          text-align: center;
+        }
+        p{
+          text-align: justify;
+          padding-top: 2%;
+         
+        }
+        h4{
+          font-size: 28;
+        }
+        .row1{
+          margin-top: 5%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .btn-card{
+          background-color: #D9D9D9;
+          padding: 1% 4% 1% 4%;
+          border-radius: 5px;
+        }
+        .button{
+            width: 12vw;
+            color: white;
+            background-color: #7843E9;
+            border-radius: 5px;
+            border: none;
+            padding: 8px;
+        }
+        .proj-cnt{
+          display: flex;
+          width: 90%;
+          margin: 5%;
+          justify-content: space-evenly;
+        }
+        .proj-cnt img{
+          width: 50%;
+        }
+        .proj-desc{
+          margin: 4%;
+          width: 30%;
+          margin-top: 8%;
+          text-align: left;
+        }
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarText">
-           
-            <span class="navbar-text">
-               <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-            </span>
-          </div>
-        </div>
-      </nav>
+  
+<div class="nav-bar">
+  <div class="name">
+    <img src="../assets/images/pavin2.jpeg" alt="">
+    <h4>PAVIN P S</h4>
+  </div>
+  <div class="links nav">
+    <a href="">HOME</a>
+    <a href="">ABOUT</a>
+    <a href="">PROJECTS</a>
+    <a href="">CONTACT</a>
+  </div>
+</div>    
+<div class="ab-title">
+  <div class="sub1">
+    <h1>HEY, I'M PAVIN P S</h1>
+  <h4>
+    A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+  </h4>
+  </div>
+</div>
+ <div class="about-title">
+  <h1 style="font-size: 50;">ABOUT ME</h1>
+  <hr>
+  <h4>Here you will find more information about me, and my skills</h4>
+ </div>
+ <div class="about">
+  <div class="me">
+    <h1>Get to Know me!</h1>
+    
+    <p>
+      I’m a Highly accomplished and user-focused Front-end Developer adept in collaborating with UX and design teams 
+      to plan the technical writing and execution of functional specifications for websites and applications. 
       
+    </p>
+    
+    <p>
+      Experienced in HTML5, CSS3, Bootstrap & building multi-platform websites using Responsive Web Design/RWD.
       
+    </p>
+    <a href="./pages/about.html"><div class="button">
+      CONTACT
+  </div></a>
+  </div>
+  <div class="skills">
+    <h1>
+      My Skills
+    </h1>
+    <div class="row1">
+      <span class="btn-card">HTML</span>
+      <span class="btn-card">CSS</span>
+      <span class="btn-card">BOOTSTRAP</span>
+    </div>
+    <div class="row1">
+      <span class="btn-card">GITHUB</span>
+      <span class="btn-card">WORDPRESS</span>
+      <span class="btn-card">FIGMA</span>
+    </div>
+  </div>
+ </div>
+ 
+ <div class="about-title">
+  <h1 style="font-size: 50;">TIME LINE</h1>
+  <hr>
+  
+ </div>
+ 
+ <div class="about-title" style="margin-bottom: 10%;">
+  <h1 style="font-size: 50;">PROJECTS</h1>
+  <hr>
+  <h4>Here you will find some of my personal projects</h4>
+  <div class="proj-cnt">
+    <img src="../assets/images/iegg.jpg" alt="">
+    <div class="proj-desc">
+      <h2>IEGG DASHBOARD</h2>
+      <p>
+        Certainly! The IEGG Dashboard, developed using Google AppSheet, offers easy accessibility and user-friendly features, making it a convenient and comprehensible tool for monitoring egg production in a poultry farm.
+      </p>
+    </div>
+  </div>
+  <div class="proj-cnt" >
+    <img src="../assets/images/port.jpg" alt="">
+    <div class="proj-desc">
+      <h2>MY PORTFOLIO</h2>
+      <p>
+        Developed a sleek and responsive portfolio website using HTML and CSS, showcasing proficiency in front-end development. Ensured cross-browser compatibility and implemented modern design principles for an enhanced user experience. Continuously updated skills to stay current with the latest web development trends.  
+      </p>
+    </div>
+  </div>
+ </div>
+ 
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

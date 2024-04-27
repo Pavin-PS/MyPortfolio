@@ -65,6 +65,9 @@
           font-size: 50;
           font-weight: bold;
         }
+        .name h4{
+          font-size: 2vw;
+        }
         .about-title{
           width: 100%;
           text-align: center;
@@ -99,9 +102,7 @@
           padding-top: 2%;
          
         }
-        h4{
-          font-size: 28;
-        }
+        
         .row1{
           margin-top: 5%;
           display: flex;
@@ -118,6 +119,8 @@
             background-color: #7843E9;
             border-radius: 5px;
             border: none;
+            font-size: 1.5vw;
+            text-decoration: none;
             padding: 8px;
         }
         .proj-cnt{
@@ -131,27 +134,64 @@
         }
         .proj-desc{
           margin: 4%;
-          width: 30%;
+          width: 100%;
           margin-top: 8%;
           text-align: left;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .row1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+          .row1 span{
+            margin-top: 1vw;
+          }
+          .proj-cnt{
+            align-items: center;
+            text-align: center;
+            margin-left: 15%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+          .name{
+            width: 45%;
+          }
+          .name h4{
+          font-size: 4vw;
+          margin-top: 4.5%;
+        }
         }
 
     </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="name">
+        <img src="../assets/images/pavin2.jpeg" alt="">
+        <h4>PAVIN P S</h4>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#project">Projects</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   
-<div class="nav-bar">
-  <div class="name">
-    <img src="../assets/images/pavin2.jpeg" alt="">
-    <h4>PAVIN P S</h4>
-  </div>
-  <div class="links nav">
-    <a href="">HOME</a>
-    <a href="">ABOUT</a>
-    <a href="">PROJECTS</a>
-    <a href="">CONTACT</a>
-  </div>
-</div>    
+
 <div class="ab-title">
   <div class="sub1">
     <h1>HEY, I'M PAVIN P S</h1>
@@ -160,7 +200,7 @@
   </h4>
   </div>
 </div>
- <div class="about-title">
+ <div class="about-title" id="about">
   <h1 style="font-size: 50;">ABOUT ME</h1>
   <hr>
   <h4>Here you will find more information about me, and my skills</h4>
@@ -179,7 +219,7 @@
       Experienced in HTML5, CSS3, Bootstrap & building multi-platform websites using Responsive Web Design/RWD.
       
     </p>
-    <a href="./pages/about.html"><div class="button">
+    <a href="./pages/about.html" style="text-decoration: none;"><div class="button">
       CONTACT
   </div></a>
   </div>
@@ -206,12 +246,12 @@
   
  </div>
  
- <div class="about-title" style="margin-bottom: 10%;">
+ <div class="about-title" style="margin-bottom: 10%;" id="project">
   <h1 style="font-size: 50;">PROJECTS</h1>
   <hr>
   <h4>Here you will find some of my personal projects</h4>
   <div class="proj-cnt">
-    <img src="../assets/images/iegg.jpg" alt="">
+    <img src="../assets/images/iegg.jpg" style="height: 25vw; width: 30vw; margin-top: 5vw;">
     <div class="proj-desc">
       <h2>IEGG DASHBOARD</h2>
       <p>
@@ -220,7 +260,7 @@
     </div>
   </div>
   <div class="proj-cnt" >
-    <img src="../assets/images/port.jpg" alt="">
+    <img src="../assets/images/port.jpg" style="height: 25vw; width: 30vw; margin-top: 5vw;">
     <div class="proj-desc">
       <h2>MY PORTFOLIO</h2>
       <p>
@@ -230,6 +270,36 @@
   </div>
  </div>
  
+
+ <div class="about-title" style="margin-bottom: 10%;" id="project">
+  <h1 style="font-size: 50;">ACHIEVEMENTS</h1>
+  <hr>
+  <h4>Here you will find some of my ACHIEVEMENTS</h4>
+  <div class="proj-cnt">
+    
+    <div class="proj-desc">
+      <h2>Mahatma Gandhi Merit Scholarship Award 2021 - 2022</h2>
+    </div>
+  </div>
+  <div class="proj-cnt" >
+    <div class="proj-desc">
+      <h2>Mahatma Gandhi Merit Scholarship Award 2022 - 2023</h2>
+    </div>
+  </div>
+  <div class="proj-cnt" >
+    <div class="proj-desc">
+      <h2>Achievers Award 2023 - 2024</h2>
+      
+    </div>
+  </div>
+  <div class="proj-cnt" >
+    
+    <div class="proj-desc">
+      <h2>Best Outgoing Student 2023 -2024</h2>
+      
+    </div>
+  </div>
+ </div>
 
 
 </body>

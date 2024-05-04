@@ -8,6 +8,7 @@
         *{
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
         body{
             width: 100vh;
@@ -84,7 +85,42 @@
             margin-top: 5%;
             margin-bottom: 5%;
         }
-        
+        @media only screen and (max-width: 700px){
+            .card{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .card2 img{
+                width: 50vw;
+                height: 50vw;
+                margin-left: 25vw;
+            }
+            .card1{
+                width: 90vw;
+                margin-left: 5vw;
+            }
+            .card1 h1{
+                font-size: 10vw;
+            }
+            .card1 h3{
+                font-size: 3.33vw;
+                margin-right: 25vw;
+            }
+            .card1 hr{
+                width: 40vw;
+                margin-right: 25vw;
+            }
+            .card1 .media{
+                width: 30%;
+                margin-left: 35%;
+            }
+            .card1 .button{
+                width: 30%;
+                font-size: 3.3vw;
+                margin-left: 35%;
+            }
+        }
         
     </style>
 </head>
@@ -100,7 +136,7 @@
                 <a href="mailto:info.pavinps@gmail.com"><img src="./assets/images/mail.png" alt="" style="width: 5vw;"></a>
             </div>
             <a href="./pages/about.html"><div class="button">
-                CLICK HERE TO KNOW MORE
+                CLICK HERE
             </div></a>
         </div>
         <div class="card2">
